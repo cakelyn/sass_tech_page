@@ -1,0 +1,183 @@
+body {
+  background-color: #fff;
+  font-family: 'Roboto Slab', serif;
+}
+
+h2, h3, h4, a, a:hover, a:visited, a:active {
+  color: #52B6C6;
+}
+
+h1 {
+  color: #C652A4;
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+p {
+  color: #342458;
+  font-size: 14px;
+}
+
+.menu {
+  width: 100%;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.menu::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0em;
+}
+
+.menu::-webkit-scrollbar-thumb {
+  background-color: #d3d3d3;
+  outline: 0px;
+}
+
+.menu::-webkit-scrollbar-track {
+  background-color: #f8f8f8;
+}
+
+.content {
+  padding: 0px 0px 0px 20px;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.content::-webkit-scrollbar {
+  width: 0em;
+  height: 0em;
+}
+
+button {
+  background-color: #fff;
+  border: 0;
+}
+
+.glyphicon {
+  font-size: 24px;
+  color: #342458;
+  position: fixed;
+  margin: 10px 0px 0px 20px;
+}
+
+.jumbotron h1 {
+  font-family: 'Sacramento', cursive !important;
+  font-size: 69px;
+}
+
+.jumbotron p {
+  font-family: 'Sacramento', cursive !important;
+  font-size: 28px;
+}
+
+.jumbotron {
+  color: #C652A4;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+ul ul {
+  list-style-type: disc;
+}
+
+ol li {
+  font-size: 14px;
+}
+
+ul li {
+  font-size: 14px;
+}
+
+.font12 {
+  font-size: 12px !important;
+}
+
+.font16 {
+  font-size: 16px !important;
+}
+
+.pad-text {
+  padding: 0px 10px 0px 0px;
+}
+
+.col-sm-8 {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+pre {
+  background-color: #FFF2F4;
+  font-family: 'Source Code Pro', monospace;
+  color: #494453;
+  border: 0;
+  margin: 40px 0px 40px 0px;
+  padding: 20px 0px 20px 0px;
+}
+
+.center {
+  text-align: center;
+}
+
+.container, .col-sm-3 {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .content {
+  padding: 0px 50px 0px 80px;
+  }
+
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+}
