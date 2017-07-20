@@ -1,28 +1,7 @@
-<!--
-FREECODECAMP REQUIREMENTS:
-1. there is a <main> element with id="main-doc" which contains the main content.
-2. within #main-doc element, there are at least five <section> elements with class "main-section".
-3. the first element in each .main-section should be a <header> element.
-4. each <section> element with the class .main-section should also have an id that corresponds with the text of each <header> contained in it.
-5. the .main-section elements should contain at least 10 <p> elements total.
-6. the .main-section elements should contain at least 5 <code> elements in total.
-7. the .main-section elements should contain at least 5 <li> items total.
-8. there is a <nav> element with the corresponding id="navbar".
-9. the <nav> element should contain one <header> element which contains text that describes the topic of the technical documentation.
-10. the <nav> element should contain link <a> elements with the class of "nav-link" for every .main-section.
-11. the <header> element in the <nav> must come before any <a> elements.
-12. each .nav-link should contain text that corresponds to the <header> text within each <section>. (idk what this means even)
-13. when a <nav> element is clicked, the page should navigate to the corresponding setion of the .main-doc element.
-14. on regular sized devices, the <nav> should be shown on the left side of the screen and should always be visable to the user.
-15. at least 1 media query.
- -->
-
 <!DOCTYPE html>
 <html>
 
 <head>
-  <!-- CDN link to run tests for freeCodeCamp -->
-  <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Sacramento|Source+Code+Pro" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="theme.css">
@@ -41,11 +20,10 @@ FREECODECAMP REQUIREMENTS:
   <div class="row row-offcanvas row-offcanvas-left">
 
     <div class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas" id="menu">
-      <nav id="navbar"><header>Sass (Syntactically Awesome StyleSheets)</header><br>
       <ol class="menu">
-        <li class="font16"><a class="nav-link" href="#features">Features</a></li>
-        <li class="font16"><a class="nav-link" href="#syntax">Syntax</a></li>
-        <li class="font16"><a class="nav-link" href="#usingSass">Using Sass</a></li>
+        <li class="font16"><a href="#features">Features</a></li>
+        <li class="font16"><a href="#syntax">Syntax</a></li>
+        <li class="font16"><a href="#usingSass">Using Sass</a></li>
         <ul>
           <li class="font12"><a href="#rackRailsMerb">Rack/Rails/Merb Plugin</a></li>
           <li class="font12"><a href="#caching">Caching</a></li>
@@ -60,8 +38,8 @@ FREECODECAMP REQUIREMENTS:
           <li class="font12"><a href="#nestedProps">Nested Properties</a></li>
           <li class="font12"><a href="#placeSel">Placeholder Selectors: %foo</a></li>
         </ul>
-        <li class="font16"><a class="nav-link" href="#comments">Comments: /* */ and // #comments</a></li>
-        <li class="font16"><a class="nav-link" href="#sassScript">SassScript #sassscript</a></li>
+        <li class="font16"><a href="#comments">Comments: /* */ and // #comments</a></li>
+        <li class="font16"><a href="#sassScript">SassScript #sassscript</a></li>
         <ul>
           <li class="font12"><a href="#interactiveShell">Interactive Shell</a></li>
           <li class="font12"><a href="#variables">Variables: $ #variables_</a></li>
@@ -97,7 +75,7 @@ FREECODECAMP REQUIREMENTS:
           <li class="font12"><a href="#inSass">&amp; in SassScript #parent-script</a></li>
           <li class="font12"><a href="#varDefaults">Variable Defaults: !default</a></li>
         </ul>
-        <li class="font16"><a class="nav-link" href="#rulesDir">>@-Rules and Directives #directives</a></li>
+        <li class="font16"><a href="#rulesDir">>@-Rules and Directives #directives</a></li>
         <ul>
           <li class="font12"><a href="#import">@import #import</a></li>
           <ul>
@@ -127,7 +105,7 @@ FREECODECAMP REQUIREMENTS:
           <li class="font12"><a href="#warn">@warn</a></li>
           <li class="font12"><a href="#error">@error</a></li>
         </ul>
-        <li class="font16"><a class="nav-link" href="#controlDirExp">Control Directives &amp; Expressions</a></li>
+        <li class="font16"><a href="#controlDirExp">Control Directives &amp; Expressions</a></li>
         <ul>
           <li class="font12"><a href="#if">if()</a></li>
           <li class="font12"><a href="#atIf">@if</a></li>
@@ -138,7 +116,7 @@ FREECODECAMP REQUIREMENTS:
           </ul>
           <li class="font12"><a href="#while">@while</a></li>
         </ul>
-        <li class="font16"><a class="nav-link" href="#mixins">Mixin Directives #mixins</a></li>
+        <li class="font16"><a href="#mixins">Mixin Directives #mixins</a></li>
         <ul>
           <li class="font12"><a href="#defMixin">Defining a Mixin: @mixin #defining_a_mixin</a></li>
           <li class="font12"><a href="#inclMixin">Including a Mixin: @include #including_a_mixin</a></li>
@@ -153,15 +131,15 @@ FREECODECAMP REQUIREMENTS:
             <li class="font12"><a href="#varScope">Variable Scope and Content Blocks</a></li>
           </ul>
         </ul>
-        <li class="font16"><a class="nav-link" href="#funcDirect">Function Directives #function_directives</a></li>
-        <li class="font16"><a class="nav-link" href="#outputStyle">Output Style</a></li>
+        <li class="font16"><a href="#funcDirect">Function Directives #function_directives</a></li>
+        <li class="font16"><a href="#outputStyle">Output Style</a></li>
         <ul>
           <li class="font12"><a href="#nested">:nested</a></li>
           <li class="font12"><a href="#expanded">:expanded</a></li>
           <li class="font12"><a href="#compact">:compact</a></li>
           <li class="font12"><a href="#compressed">:compressed</a></li>
         </ul>
-        <li class="font16"><a class="nav-link" href="#extSass">Extending Sass</a></li>
+        <li class="font16"><a href="#extSass">Extending Sass</a></li>
         <ul>
           <li class="font12"><a href="#customSass">Defining Custom Sass Functions</a></li>
           <li class="font12"><a href="#cacheStores">Cache Stores</a></li>
@@ -183,14 +161,13 @@ FREECODECAMP REQUIREMENTS:
         <p class="fancy-text">(syntactically swesome stylesheets)</p>
       </div>
 
-      <main id="main-doc">
         <h1>Introduction</h1>
 
         <p>Sass is an extension of CSS that adds power and elegance to the basic language. It allows you to use <a href="#variables">variables</a>, <a href="#nestedRules">nested rules</a>, <a href="#mixins">mixins</a>, <a href="#import">inline imports</a>, and more, all with a fully CSS-compatible syntax. Sass helps keep large stylesheets well-organized, and get small stylesheets up and running quickly, particularly with the help of the <a href="compass-style.org" target="_blank">Compass style library.</a></p>
 
         <hr>
 
-        <section id="Features" class="main-section"><header><h1 id="features">Features</h1></header></section>
+        <h1 id="features">Features</h1>
 
         <ul>
           <li>Fully CSS-compatible</li>
@@ -202,7 +179,7 @@ FREECODECAMP REQUIREMENTS:
 
         <hr>
 
-        <section id="Syntax" class="main-section"><header><h1 id="syntax">Syntax</h1></header></section>
+        <h1 id="syntax">Syntax</h1>
 
         <p>There are two syntaxes available for Sass. The first, known as SCSS (Sassy CSS) and used throughout this reference, is an extension of the syntax of CSS. This means that every valid CSS stylesheet is a valid SCSS file with the same meaning. In addition, SCSS understands most CSS hacks and vendor-specific syntax, such as <a href="http://msdn.microsoft.com/en-us/library/ms530752.aspx" target="_blank">IE's old filter syntax</a>. This syntax is enhanced with the Sass features described below. Files using this syntax have the .scss extension.</p>
 
@@ -222,7 +199,7 @@ FREECODECAMP REQUIREMENTS:
 
         <hr>
 
-        <section id="Using_Sass" class="main-section"><header><h1 id="usingSass">Using Sass</h1></header></section>
+        <h1 id="usingSass">Using Sass</h1>
 
         <p>Sass can be used in three ways: as a command-line tool, as a standalone Ruby module, and as a plugin for any Rack-enabled framework, including Ruby on Rails and Merb. The first step for all of these is to install the Sass gem:</p>
 
@@ -374,7 +351,7 @@ FREECODECAMP REQUIREMENTS:
 
         <hr>
 
-        <section id="CSS_Extensions" class="main-section"><header><h1 id="cssEx">CSS Extensions</h1></header></section>
+        <h1 id="cssEx">CSS Extensions</h1>
 
         <h2 id="nestedRules">Nested Rules</h2>
 
@@ -549,7 +526,7 @@ FREECODECAMP REQUIREMENTS:
 
         <hr>
 
-        <section id="Comments:_/*_*/_and_//_#comments" class="main-section"><header><h1 id="comments">Comments: /* */ and // #comments</h1></header></section>
+        <h1 id="comments">Comments: /* */ and // #comments</h1>
 
         <p>Sass supports standard multiline CSS comments with <code>/* */</code>, as well as single-line comments with <code>//</code>. The multiline comments are preserved in the CSS output where possible, while the single-line comments are removed. For example:</p>
 
@@ -597,7 +574,7 @@ FREECODECAMP REQUIREMENTS:
 
         <hr>
 
-        <section id="SassScript_@sassscript" class="main-section"><header><h1 id="sassScript">SassScript @sassscript</h1></header></section>
+        <h1 id="sassScript">SassScript @sassscript</h1>
 
         <p>In addition to the plain CSS property syntax, Sass supports a small set of extensions called SassScript. SassScript allows properties to use variables, arithmetic, and extra functions. SassScript can be used in any property value.</p>
 
@@ -1172,7 +1149,7 @@ FREECODECAMP REQUIREMENTS:
 
         <hr>
 
-        <section id="@-Rules_and_Directives_#directives" class="main-section"><header><h1 id="rulesDir">@-Rules and Directives #directives</h1></header></section>
+        <h1 id="rulesDir">@-Rules and Directives #directives</h1>
 
         <p>Sass supports all CSS3 <code>@-rules</code>, as well as some additional Sass-specific ones known as "directives." These have various effects in Sass, detailed below. See also control directives and mixin directives.</p>
 
@@ -1873,7 +1850,7 @@ FREECODECAMP REQUIREMENTS:
 
         <p>There is currently no way to catch errors.</p>
 
-        <section id="Control_Directives_&_Expressions" class="main-section"><header><h1 id="controlDirExp">Control Directives &amp; Expressions</h1></header></section>
+        <h1 id="controlDirExp">Control Directives &amp; Expressions</h1>
 
         <p>SassScript supports basic control directives and expressions for including styles only under some conditions or including the same style several times with variations.</p>
 
@@ -2064,7 +2041,7 @@ FREECODECAMP REQUIREMENTS:
 
         <hr>
 
-        <section id="Mixin_Directives_#mixins" class="main-section"><header><h1 id="mixins">Mixin Directives #mixins</h1></header></section>
+        <h1 id="mixins">Mixin Directives #mixins</h1>
 
         <p>Mixins allow you to define styles that can be re-used throughout the stylesheet without needing to resort to non-semantic classes like <code>.float-left</code>. Mixins can also contain full CSS rules, and anything else allowed elsewhere in a Sass document. They can even take arguments which allows you to produce a wide variety of styles with very few mixins.</p>
 
@@ -2397,7 +2374,7 @@ FREECODECAMP REQUIREMENTS:
 
         <hr>
 
-        <section id="Function_Directives_#function_directives" class="main-section"><header><h1 id="funcDirect">Function Directives #function_directives</h1></header></section>
+        <h1 id="funcDirect">Function Directives #function_directives</h1>
 
         <p>It is possible to define your own functions in sass and use them in any value or script context. For example:</p>
 
@@ -2435,7 +2412,7 @@ FREECODECAMP REQUIREMENTS:
 
         <hr>
 
-        <section id="Output_Style" class="main-section"><header><h1 id="outputStyle">Output Style</h1></header></section>
+        <h1 id="outputStyle">Output Style</h1>
 
         <p>Although the default CSS style that Sass outputs is very nice and reflects the structure of the document, tastes and needs vary and so Sass supports several other styles.</p>
 
@@ -2501,7 +2478,7 @@ FREECODECAMP REQUIREMENTS:
 
         <hr>
 
-        <section id="Extending_Sass" class="main-section"><header><h1 id="extSass">Extending Sass</h1></header></section>
+        <h1 id="extSass">Extending Sass</h1>
 
         <p>Sass provides a number of advanced customizations for users with unique requirements. Using these features requires a strong understanding of Ruby.</p>
 
